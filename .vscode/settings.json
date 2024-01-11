@@ -11,7 +11,7 @@
             "driver": "MySQL",
             "name": "mysql",
             "database": "webapp",
-            "username": "webapp"
+            "username": "root"
         }
     ]
 }

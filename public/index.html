@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<HTML LANG="eu">
+
+<HEAD>
+   <TITLE>txebizitzen sartzea</TITLE>
+   <LINK REL="stylesheet" TYPE="text/css" HREF="estiloa.css">
+</HEAD>
+
+<BODY>
+
+
+<H1>Etxebizitzen sartzea</H1>
+
+<P>Sartu etxebizitzaren datuak:</P>
+
+<FORM CLASS="borde" ACTION="etxebizitzak.php" METHOD="POST">
+
+<P><LABEL>Etxebizitza mota:</LABEL>
+<SELECT NAME="mota">
+   <OPTION VALUE="Pisua" SELECTED>Pisua</OPTION>
+   <OPTION VALUE="Atxikia">Atxikia</OPTION>
+   <OPTION VALUE="TxaletA">TxaletA</OPTION>
+   <OPTION VALUE="Etxea">Etxea</OPTION>
+</SELECT></P>
+
+<P><LABEL>Barrutia:</LABEL>
+<SELECT NAME="lekua">
+   <OPTION VALUE="Erdigunea">Erdigunea</OPTION>
+   <OPTION VALUE="Nervión">Nervión</OPTION>
+   <OPTION VALUE="Triana">Triana</OPTION>
+   <OPTION VALUE="Aljarafe">Aljarafe</OPTION>
+   <OPTION VALUE="Macarena">Macarena</OPTION>
+</SELECT></P>
+
+<P><LABEL>Helbidea:</LABEL>
+<INPUT TYPE="TEXT" NAME="helbidea"></P>
+
+<P><LABEL>Logela kopurua:</LABEL>
+<INPUT TYPE="radio" NAME="logelak" VALUE="1">1
+<INPUT TYPE="radio" NAME="logelak" VALUE="2">2
+<INPUT TYPE="radio" NAME="logelak" VALUE="3" CHECKED>3
+<INPUT TYPE="radio" NAME="logelak" VALUE="4">4
+<INPUT TYPE="radio" NAME="logelak" VALUE="5">5</P>
+
+<P><LABEL>Prezioa:</LABEL>
+<INPUT TYPE="TEXT" NAME="prezioa"> &euro;</P>
+
+<P><LABEL>Tamaina:</LABEL>
+<INPUT TYPE="TEXT" NAME="tamaina"> metro koadro</P>
+
+<P><LABEL>Gehigarriak (markatu bidezkoak):</LABEL>
+<INPUT TYPE="checkbox" NAME="estrak[]" VALUE="igerileku">Igerilekua
+<INPUT TYPE="checkbox" NAME="estrak[]" VALUE="lorategi">Lorategia
+<INPUT TYPE="checkbox" NAME="estrak[]" VALUE="garage">Garage</P>
+
+<P><LABEL>Oharrak:</LABEL>
+<TEXTAREA NAME="oharrak" COLS="50" ROWS="5"></TEXTAREA></P>
+
+<P><INPUT TYPE="submit" NAME="sartu" VALUE="Etxebizitza sartu"></P>
+
+</FORM>
+
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,48 @@
+/* General */
+BODY {
+   font-family: verdana, arial, sans-serif;
+   font-size: 10pt;
+}
+
+/* Contenido */
+H1 {
+   font-size: 16pt;
+   font-weight: bold;
+   color: #0066CC;
+}
+
+H2 {
+   font-size: 12pt;
+   font-weight: bold;
+   font-style: italic;
+   color: black;
+}
+
+H3 {
+   font-size: 10pt;
+   font-weight: bold;
+   color: black;
+}
+
+/* Formulario */
+FORM.borde {
+   border: 1px dotted #0066CC;
+   padding: 0.5em 0.2em;
+   width: 80%;
+}
+
+FORM P {
+   clear: left;
+   margin: 0.2em;
+   padding: 0.1em;
+}
+
+FORM P LABEL {
+   float: left;
+   width: 25%;
+   font-weight: bold;
+}
+
+.error {
+   color: red;
+}

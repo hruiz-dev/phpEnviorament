@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTML LANG="eu">
+
+<HEAD>
+   <TITLE>Fitxategiak igotzea</TITLE>
+   <LINK REL="stylesheet" TYPE="text/css" HREF="estiloa.css">
+</HEAD>
+
+<BODY>
+
+
+   <H1>Fitxategiak igotzea</H1>
+
+   <H2>Albiste berria txertatu</H2>
+
+   <FORM CLASS="borde" ACTION="fitxategiak.php" METHOD="POST" ENCTYPE="multipart/form-data">
+
+      <!-- Albistearen izenburua -->
+      <P><LABEL>Izenburua: *</LABEL>
+         <INPUT TYPE="TEXT" NAME="izenburua" SIZE="50" MAXLENGTH="50">
+      </P>
+
+      <!-- Albistearen textua-->
+      <P><LABEL>Textua: *</LABEL>
+         <TEXTAREA COLS="45" ROWS="5" NAME="textua"></TEXTAREA>
+      </P>
+
+      <!-- Albistearen kategoria-->
+      <P><LABEL>Kategoria:</LABEL>
+         <SELECT NAME="kategoria">
+            <OPTION SELECTED>sustapenak</OPTION>
+            <OPTION>eskaintzak</OPTION>
+            <OPTION>kostuak</OPTION>
+         </SELECT>
+      </P>
+
+      <!-- Albistearekin lotutako irudia. Gehienezko tamaina: 100 Kb -->
+      <P><LABEL>Irudia:</LABEL>
+         <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE" VALUE="102400">
+         <INPUT TYPE="FILE" SIZE="44" NAME="irudia">
+      </P>
+
+      <!-- Bidalketa-botoia -->
+      <P><INPUT TYPE="SUBMIT" NAME="bidali" VALUE="Berria txertatu"></P>
+
+   </FORM>
+
+   <P>OHARRA: (*) rekin markatutako datuak nahitaez bete behar dira</P>
+
+
+</BODY>
+
+</HTML>
